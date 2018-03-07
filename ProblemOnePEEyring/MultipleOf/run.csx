@@ -2,7 +2,7 @@ using System;
 
 public static void Run(string myQueueItem, ICollector<string> outputMultiple, TraceWriter log)
 {
-    log.Info($"Number is: {myQueueItem}");
+    log.Info($"The Number is: {myQueueItem}");
 
     var number = int.Parse(myQueueItem);
 
