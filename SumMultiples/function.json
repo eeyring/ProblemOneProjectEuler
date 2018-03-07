@@ -1,0 +1,20 @@
+{
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "multipleof",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "type": "table",
+      "name": "outputSumOfMultipleTable",
+      "tableName": "sumOfMultiples",
+      "connection": "AzureWebJobsStorage",
+      "direction": "out"
+    }
+  ],
+  "disabled": false,
+  "dynamicTrottlesEnabled": false
+}
